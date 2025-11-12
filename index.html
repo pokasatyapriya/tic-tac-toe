@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Tic-Tac-Toe — GitHub Pages Demo</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="app">
+<div class="header">
+<h1>Tic-Tac-Toe</h1>
+<div class="controls">
+<label for="mode">Mode:</label>
+<select id="mode" aria-label="Mode">
+<option value="pvp">Player vs Player</option>
+<option value="pvc">Player vs Computer</option>
+</select>
+<label for="first">Who goes first:</label>
+<select id="first" aria-label="Who goes first">
+<option value="player">Player (X)</option>
+<option value="computer">Computer (O)</option>
+</select>
+<button id="reset" class="btn">Reset</button>
+</div>
+</div>
+<div class="game-area">
+<div id="board" class="board" role="grid" aria-label="Tic Tac Toe board"></div>
+<div class="sidebar">
+<div class="status" id="status" aria-live="polite">Choose a mode to start.</div>
+<div class="scoreboard">
+<div><strong>Player (X):</strong> <span id="scoreX">0</span></div>
+<div><strong>Computer / O:</strong> <span id="scoreO">0</span></div>
+<div><strong>Draws:</strong> <span id="scoreD">0</span></div>
+</div>
+<div class="legend">
+<p><strong>How to play:</strong></p>
+<ul>
+<li>Choose mode (PvP or PvC)</li>
+<li>Click an empty cell to place your mark.</li>
+<li>First to get 3 in a row wins.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Made for GitHub Pages • Simple AI uses Minimax (depth-limited) for PvC</p>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
